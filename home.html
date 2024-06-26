@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELLE FT GYM</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* Slide profile CSS */
+        .slide-profile {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: #333;
+            transition: left 0.3s ease;
+        }
+        .slide-profile.open {
+            left: 0;
+        }
+        .profile-content {
+            padding: 20px;
+            color: #fff;
+        }
+        .profile-content h2 {
+            margin-top: 0;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-profile" id="slideProfile">
+        <div class="profile-content">
+            <span class="close-btn" onclick="closeProfile()">&times;</span>
+            <h2>User Profile</h2>
+            <p>Name: John Doe</p>
+            <p>Email: john@example.com</p>
+            <p>Membership Type: Gold</p>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="logo">BELLE FIT GYM</div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" onclick="openProfile()" style="display: flex; align-items: center;">
+                            <img src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png" alt="Profile Image" style="width: 1em; height: 1em; margin-right: 0.5em;">
+                            Profile
+                        </a>
+                    </li>
+                    
+                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact">+9190XXXXXXX0</div>
+        </div>
+        
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Step Up Your <br> Fitness Challenge <br> With Us</h1>
+            <button id="joinbtn" class="ripple-btn">JOIN US</button>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h2>Modern Equipment</h2>
+            <p>Vestibulum sit amet blandit augue, sit amet vehicula mi.</p>
+        </div>
+        <div class="feature">
+            <h2>Professional Trainer</h2>
+            <p>Vestibulum sit amet blandit augue, sit amet vehicula mi.</p>
+        </div>
+        <div class="feature">
+            <h2>Healthy Diet Plan</h2>
+            <p>Vestibulum sit amet blandit augue, sit amet vehicula mi.</p>
+        </div>
+    </section>
+
+    <script>
+        function openProfile() {
+            document.getElementById("slideProfile").classList.add("open");
+        }
+        function closeProfile() {
+            document.getElementById("slideProfile").classList.remove("open");
+        }
+        
+        document.getElementById("joinbtn").addEventListener("click", function() {
+        window.location.href = "schedule.html";
+    });
+
+    
+    </script>
+</body>
+</html>
