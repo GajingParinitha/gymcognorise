@@ -1,0 +1,60 @@
+body,html {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    background:url(https://t4.ftcdn.net/jpg/05/51/40/05/360_F_551400528_cM1cQvQ9ndhizkGGgMjYwAbnrRffa4BR.jpg) ;
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+}
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: top;
+    padding: 20px;}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+.btn {
+    display: inline-block;
+    padding: 100px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-login {
+    background-color:purple;
+    color: white;
+    font-weight: bolder;
+}
+.btn-signin {
+    background-color: purple;
+    color: white;
+    font-weight: bolder;
+}
+label{
+    color:plum;
+    height: 200px;
+    line-height: 10px;
+    border-radius: 20px;
+    padding: 230px 50px;
+    border: none;
+    margin-bottom: 20px;
+    color:purple;
+    font-weight: bolder;
+    text-align: top;
+    font-size:100px;
+    margin-top: 10px;
+}
+
+

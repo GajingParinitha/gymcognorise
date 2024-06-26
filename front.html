@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firstpage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .buttons-container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-login {
+            background-color: palevioletred;
+            color: white;
+        }
+        .btn-signin {
+            background-color: palevioletred;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="buttons-container">
+    <label>BELLE FIT GYM</label>
+    <button id="loginBtn" class="btn btn-login">LOGIN</button>
+    <button id="signinBtn" class="btn btn-signin">SIGNIN</button>
+</div>
+<script>
+    
+    document.getElementById("loginBtn").addEventListener("click", function() {
+        window.location.href = "loginalt.html";
+    });
+
+    document.getElementById("signinBtn").addEventListener("click", function() {
+        window.location.href = "signin.html";
+    });
+</script>
+
+</body>
+</html>
